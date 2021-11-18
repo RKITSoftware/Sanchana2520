@@ -57,13 +57,20 @@ namespace file_operation
                     Console.WriteLine(s);
                 }
             }
+               
+             //get when the file was accessed last time 
+            DateTime lastAccessTime = File.GetLastAccessTime(pathToFile);
+            Console.WriteLine("Last Access time: {0}", lastAccessTime);
 
+            //get when the file was written last time
+            DateTime lastWriteTime = File.GetLastWriteTime(pathToFile);
+            Console.WriteLine("Last time Written: {0}", lastWriteTime);
 
             string OriginalFile = @"C:\sanchana\demo.txt"; //path of file
             string DuplicateFile = @"C:\sanchana\copy_test.txt";   //duplicate file path 
 
             //COPYING a file
-           File.Copy(OriginalFile, DuplicateFile);
+            File.Copy(OriginalFile, DuplicateFile);
 
             //MOVING file to another location
             string MoveFile = @"C:\src\demo.txt";
