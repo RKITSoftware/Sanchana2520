@@ -57,6 +57,12 @@ namespace file_operation
                     Console.WriteLine(s);
                 }
             }
+            //Reading all the lines one by one in a file
+            String[] lines;
+            lines = File.ReadAllLines(pathToFile);
+            Console.WriteLine("Reading the lines one by one:");
+            Console.WriteLine(lines[0]);
+            Console.WriteLine(lines[1]);
                
              //get when the file was accessed last time 
             DateTime lastAccessTime = File.GetLastAccessTime(pathToFile);
