@@ -77,7 +77,7 @@ namespace file_operation
             File.Move(OriginalFile, MoveFile);
 
             //DELETE  a file
-            string DeleteFile = @"C:\sanchana\copy_text.txt";//Get Location of file to delete
+            string DeleteFile = @"C:\sanchana\copy_test.txt";//Get Location of file to delete
             File.Delete(DeleteFile);
            
 
