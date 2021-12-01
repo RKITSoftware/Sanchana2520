@@ -1,0 +1,9 @@
+c:\users\hp\documents\visual studio 2013\Projects\Binary Serialization Demo\Binary Serialization Demo\bin\Debug\Binary Serialization Demo.exe.config
+c:\users\hp\documents\visual studio 2013\Projects\Binary Serialization Demo\Binary Serialization Demo\bin\Debug\Binary Serialization Demo.exe
+c:\users\hp\documents\visual studio 2013\Projects\Binary Serialization Demo\Binary Serialization Demo\bin\Debug\Binary Serialization Demo.pdb
+c:\users\hp\documents\visual studio 2013\Projects\Binary Serialization Demo\Binary Serialization Demo\obj\Debug\Binary Serialization Demo.csprojResolveAssemblyReference.cache
+c:\users\hp\documents\visual studio 2013\Projects\Binary Serialization Demo\Binary Serialization Demo\obj\Debug\Binary_Serialization_Demo.Form1.resources
+c:\users\hp\documents\visual studio 2013\Projects\Binary Serialization Demo\Binary Serialization Demo\obj\Debug\Binary_Serialization_Demo.Properties.Resources.resources
+c:\users\hp\documents\visual studio 2013\Projects\Binary Serialization Demo\Binary Serialization Demo\obj\Debug\Binary Serialization Demo.csproj.GenerateResource.Cache
+c:\users\hp\documents\visual studio 2013\Projects\Binary Serialization Demo\Binary Serialization Demo\obj\Debug\Binary Serialization Demo.exe
+c:\users\hp\documents\visual studio 2013\Projects\Binary Serialization Demo\Binary Serialization Demo\obj\Debug\Binary Serialization Demo.pdb
