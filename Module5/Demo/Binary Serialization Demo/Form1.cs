@@ -39,7 +39,7 @@ namespace Binary_Serialization_Demo
             {
                 using (obj_out)
                 {
-                    //bf.Serialize(obj_out, emp) will serialize the object "obj" and store it in file "employee.binary"
+                    //bf.Serialize(obj_out, obj) will serialize the object "obj" and store it in file "student.binary"
                     obj_bf.Serialize(obj_out, obj);
                     label5.Text = "Object has been Serialized";
                 }
