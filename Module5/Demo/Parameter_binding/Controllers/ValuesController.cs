@@ -39,7 +39,7 @@ namespace Parameter_binding.Controllers
 
         //Sending an object in the Url 
        
-        [Route("File3/{id1}/{id2}/{id3}")]
+        [Route("File3/{id1}/{id2}")]
         [HttpGet]
         public string Get_Parameters_AttributeRouting(int id1, long id2)
         {
