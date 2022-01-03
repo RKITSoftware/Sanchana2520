@@ -1,0 +1,9 @@
+c:\users\hp\documents\visual studio 2013\Projects\CRUD_demo\CRUD_demo\bin\Debug\CRUD_demo.exe.config
+c:\users\hp\documents\visual studio 2013\Projects\CRUD_demo\CRUD_demo\obj\Debug\CRUD_demo.csprojResolveAssemblyReference.cache
+c:\users\hp\documents\visual studio 2013\Projects\CRUD_demo\CRUD_demo\obj\Debug\CRUD_demo.Form1.resources
+c:\users\hp\documents\visual studio 2013\Projects\CRUD_demo\CRUD_demo\obj\Debug\CRUD_demo.Properties.Resources.resources
+c:\users\hp\documents\visual studio 2013\Projects\CRUD_demo\CRUD_demo\obj\Debug\CRUD_demo.csproj.GenerateResource.Cache
+c:\users\hp\documents\visual studio 2013\Projects\CRUD_demo\CRUD_demo\bin\Debug\CRUD_demo.exe
+c:\users\hp\documents\visual studio 2013\Projects\CRUD_demo\CRUD_demo\bin\Debug\CRUD_demo.pdb
+c:\users\hp\documents\visual studio 2013\Projects\CRUD_demo\CRUD_demo\obj\Debug\CRUD_demo.exe
+c:\users\hp\documents\visual studio 2013\Projects\CRUD_demo\CRUD_demo\obj\Debug\CRUD_demo.pdb
