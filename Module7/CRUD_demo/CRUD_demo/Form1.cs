@@ -20,26 +20,32 @@ namespace CRUD_demo
 
         private void button1_Click(object sender, EventArgs e)
         {
+        //creating connection
             SqlConnection con = new SqlConnection("Data Source=(localdb)\\ProjectsV12;Initial Catalog=Student;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False");
-            con.Open();
+            con.Open(); //opening connection
+            
+            //writing the sql command for insert 
             SqlCommand cmd = new SqlCommand("insert into student_info values(@Id,@Name,@Age)",con);
 
+            //adding values from text box
             cmd.Parameters.AddWithValue("@Id",int.Parse(textBox1.Text));
             cmd.Parameters.AddWithValue("@Name",textBox2.Text);
             cmd.Parameters.AddWithValue("@Age",double.Parse(textBox3.Text));
 
 
             cmd.ExecuteNonQuery();
-            con.Close();
+            con.Close(); //close connection
 
             MessageBox.Show("Inserted");
 
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
+        {    //creating connection
             SqlConnection con = new SqlConnection("Data Source=(localdb)\\ProjectsV12;Initial Catalog=Student;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False");
             con.Open();
+            
+            //query for update
             SqlCommand cmd = new SqlCommand("update student_info set Name=@Name,Age=@age where Id = @Id ", con);
             cmd.Parameters.AddWithValue("@Id", int.Parse(textBox1.Text));
             cmd.Parameters.AddWithValue("@Name", textBox2.Text);
@@ -56,6 +62,8 @@ namespace CRUD_demo
         {
             SqlConnection con = new SqlConnection("Data Source=(localdb)\\ProjectsV12;Initial Catalog=Student;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False");
             con.Open();
+            
+            //query to delete
             SqlCommand cmd = new SqlCommand("delete student_info where Id = @Id", con);
             cmd.Parameters.AddWithValue("@Id", int.Parse(textBox1.Text));
            
@@ -70,6 +78,8 @@ namespace CRUD_demo
         {
             SqlConnection con = new SqlConnection("Data Source=(localdb)\\ProjectsV12;Initial Catalog=Student;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False");
             con.Open();
+            
+            //query to select info
             SqlCommand cmd = new SqlCommand("Select * from student_info", con);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
