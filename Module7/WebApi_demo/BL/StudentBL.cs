@@ -159,8 +159,7 @@ namespace WebApi_demo.BL
                     obj_con.Open(); //open connection
 
                     //query to update
-                    MySqlCommand obj_cmd = new MySqlCommand("update countries set  Student (StudentID,StudentName,Subject) values('" + learning.StudentID + "','" + learning.StudentName + "','" + learning.Subject + "';", obj_con);
-
+                    MySqlCommand obj_cmd = new MySqlCommand("update Student set StudentID= '" + learning.StudentID + "',StudentName = '" + learning.StudentName + "', Subject = '" + learning.Subject + "' where StudentID = '" + learning.StudentID + "';", obj_con);
 
                     int result = obj_cmd.ExecuteNonQuery();
 
