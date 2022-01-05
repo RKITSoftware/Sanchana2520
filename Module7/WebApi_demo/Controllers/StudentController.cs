@@ -55,7 +55,7 @@ namespace WebApi_demo.Controllers
         /// </param>
         /// <returns>
         /// return a string messages.
-        /// </returns
+        /// </returns>
         public void Update([FromBody] StudentBL learning)
         {
             obj_db.updateStudent(learning);
@@ -68,7 +68,7 @@ namespace WebApi_demo.Controllers
         /// </param>
         /// <returns>
         /// return a string messages.
-        /// </returns
+        /// </returns>
        
         public void Delete(int id)
         {
