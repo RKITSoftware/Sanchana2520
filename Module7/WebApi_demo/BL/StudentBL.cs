@@ -69,7 +69,7 @@ namespace WebApi_demo.BL
                 try
                 {
                     //open connection
-                    obj_conn.Open();
+                    obj_con.Open();
                     MySqlCommand obj_cmd = new MySqlCommand("select * from Student where StudentID = " + id + ";", obj_con);
 
                     using (var reader = obj_cmd.ExecuteReader())
