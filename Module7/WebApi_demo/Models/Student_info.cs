@@ -26,5 +26,7 @@ namespace WebApi_demo.Models
         /// Field for Subject
         /// </summary>
         public string Subject { get; set; }
+        
+        #endregion Public Variables
     }
 }
