@@ -14,14 +14,11 @@ namespace Http_Verbs_.Controllers
         static List<string> languages = new List<string>() {   
             "C#","ASP.NET","MVC"  
               }; 
-
-      
-        [Route("")] 
+         [Route("")] 
         //This gives result to GET method without parameter
         public IEnumerable<string> Get()
         {
             return languages; 
-        
         }
         
         /// <summary>
@@ -45,11 +42,9 @@ namespace Http_Verbs_.Controllers
         [Route("")]
         public void Post([FromBody]string value)
         {
-
             languages.Add(value); 
         }
 
-        
         /// <summary>
         /// method to edit list
         /// </summary>
@@ -62,7 +57,6 @@ namespace Http_Verbs_.Controllers
         {
             languages[id] = value;  
         }
-
         
         /// <summary>
         /// Delete(int id)
@@ -74,8 +68,7 @@ namespace Http_Verbs_.Controllers
         [Route("int:id")]   
         //used to remove an item
          [HttpDelete]
-
-        public void Delete(int id)
+         public void Delete(int id)
         {
             languages.RemoveAt(id);
         }
