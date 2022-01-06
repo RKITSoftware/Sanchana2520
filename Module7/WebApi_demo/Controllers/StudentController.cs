@@ -20,7 +20,8 @@ namespace WebApi_demo.Controllers
         /// </returns>
 
         StudentBL obj_db = new StudentBL();
-    
+   
+        [HttpGet]
         public List<StudentBL> Get()
         {
             return (obj_db.selectAll());
@@ -41,7 +42,8 @@ namespace WebApi_demo.Controllers
         /// <returns>
         /// return a string messages.
         /// </returns>
-
+        
+        [HttpPost]
         public void Post([FromBody] Student_info learning)
         {
             obj_db.insertStudent(learning);
@@ -55,6 +57,7 @@ namespace WebApi_demo.Controllers
         /// <returns>
         /// return a string messages.
         /// </returns>
+        [HttpPut]
         public void Put([FromBody] Student_info learning)
         { 
             obj_db.updateStudent(learning);
@@ -69,6 +72,7 @@ namespace WebApi_demo.Controllers
         /// return a string messages.
         /// </returns>
        
+        [HttpDelete]
         public void Delete(int id)
         {
             obj_db.deleteStudent(id);
