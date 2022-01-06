@@ -136,7 +136,7 @@ namespace WebApi_demo.BL
                 }
                 finally
                 {
-                    obj_con.Close(); //closing connection
+                    obj_con.Close(); 
                 }
 
             }
@@ -177,7 +177,7 @@ namespace WebApi_demo.BL
                 }
                 finally
                 {
-                    obj_con.Close(); //closing connection
+                    obj_con.Close(); 
                 }
 
             }
@@ -216,7 +216,7 @@ namespace WebApi_demo.BL
                 }
                 finally
                 {
-                    obj_con.Close(); //close connection
+                    obj_con.Close(); 
                 }
 
             }
