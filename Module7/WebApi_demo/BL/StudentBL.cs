@@ -33,7 +33,7 @@ namespace WebApi_demo.BL
                 {
                     //open connection
                     obj_con.Open();
-                    MySqlCommand obj_cmd = new MySqlCommand("select * from Tutor", obj_con);
+                    MySqlCommand obj_cmd = new MySqlCommand("select * from Student", obj_con);
 
                     using (var reader = obj_cmd.ExecuteReader())
                     {
