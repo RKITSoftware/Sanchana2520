@@ -19,19 +19,19 @@ namespace WebApi_demo.Controllers
         /// return student Data.
         /// </returns>
 
-        StudentBL obj_db = new StudentBL();
+        StudentBL obj_bl = new StudentBL();
    
         [HttpGet]
         public List<StudentBL> Get()
         {
-            return (obj_db.selectAll());
+            return (obj_bl.selectAll());
         }
 
       
         //retrieving data
         public StudentBL Get(int id)
         {
-            return (obj_db.retrieve_data(id));
+            return (obj_bl.retrieve_data(id));
         }
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace WebApi_demo.Controllers
         [HttpPost]
         public void Post([FromBody] Student_info learning)
         {
-            obj_db.insertStudent(learning);
+            obj_bl.insertStudent(learning);
         }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace WebApi_demo.Controllers
         [HttpPut]
         public void Put([FromBody] Student_info learning)
         { 
-            obj_db.updateStudent(learning);
+            obj_bl.updateStudent(learning);
         }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace WebApi_demo.Controllers
         [HttpDelete]
         public void Delete(int id)
         {
-            obj_db.deleteStudent(id);
+            obj_bl.deleteStudent(id);
         }
     }
 }
